@@ -51,42 +51,28 @@ de haut standing
 
     <a-scene id="the_scene" the_scene cursor="rayOrigin: mouse">
         <a-assets>
-            <img id="Scene-0" src="./Style/Images/Scene-0.jpg">
             <img id="Arrow-1" src="./Style/Images/PNG/Arrow-1.png">
-            <!-- <img id="Scene-1" src="./Style/Images/Scene-1.jpg">
-            <img id="Scene-2" src="./Style/Images/Scene-2.jpg">
             <img id="Scene-3" src="./Style/Images/Scene-3.jpg">
-            <img id="Scene-4" src="./Style/Images/Scene-4.jpg">
-            <img id="Scene-5" src="./Style/Images/Scene-5.jpg">
-            <img id="Scene-6" src="./Style/Images/Scene-6.jpg">
-            <img id="Scene-7" src="./Style/Images/Scene-7.jpg">
-            <img id="Scene-8" src="./Style/Images/Scene-8.jpg">
-            <img id="Scene-9" src="./Style/Images/Scene-9.jpg">
-            <img id="Scene-10" src="./Style/Images/Scene-10.jpg">
-            <img id="Scene-11" src="./Style/Images/Scene-11.jpg">
-            <img id="Scene-12" src="./Style/Images/Scene-12.jpg">
-            <img id="Scene-13" src="./Style/Images/Scene-13.jpg"> -->
 
         </a-assets>
 
-        <a-sky id="image-360" radius="500" rotation="0 0 0" src="#Scene-0" look-controls-invert-y="false"
+        <a-sky id="image-360" radius="500" rotation="0 0 0" src="#Scene-3" look-controls-invert-y="false"
             animation__fade="property: components.material.material.color; type: color; from: #FFF; to: #000; dur: 300; startEvents: fade"
             animation__fadeback="property: components.material.material.color; type: color; from: #000; to: #FFF; dur: 300; startEvents: animationcomplete__fade">
         </a-sky>
 
         <a-assets>
-            <!-- <img id="Scene-0" src="./Style/Images/Scene-0.jpg">
-        <img id="Arrow-1" src="./Style/Images/PNG/Arrow-1.png"> -->
-            <img id="Scene-1" src="./Style/Images/Scene-1.jpg">
-            <img id="Scene-2" src="./Style/Images/Scene-2.jpg">
-            <img id="Scene-3" src="./Style/Images/Scene-3.jpg">
             <img id="Scene-4" src="./Style/Images/Scene-4.jpg">
             <img id="Scene-5" src="./Style/Images/Scene-5.jpg">
+            <img id="Scene-2" src="./Style/Images/Scene-2.jpg">
+            <img id="Scene-1" src="./Style/Images/Scene-1.jpg">
+            <img id="Scene-0" src="./Style/Images/Scene-0.jpg">
             <img id="Scene-6" src="./Style/Images/Scene-6.jpg">
             <img id="Scene-7" src="./Style/Images/Scene-7.jpg">
+            <img id="Scene-10" src="./Style/Images/Scene-10.jpg">
             <img id="Scene-8" src="./Style/Images/Scene-8.jpg">
             <img id="Scene-9" src="./Style/Images/Scene-9.jpg">
-            <img id="Scene-10" src="./Style/Images/Scene-10.jpg">
+            <img id="Scene-17" src="./Style/Images/Scene-17.jpg">
             <img id="Scene-11" src="./Style/Images/Scene-11.jpg">
             <img id="Scene-12" src="./Style/Images/Scene-12.jpg">
             <img id="Scene-13" src="./Style/Images/Scene-13.jpg">
@@ -99,7 +85,7 @@ de haut standing
 
         </a-assets>
 
-        <a-sound position="0 0 0" sound="src: #the_sound; autoplay: true; loop: true" allow="autoplay"></a-sound>
+        <!-- <a-sound position="0 0 0" sound="src: #the_sound; autoplay: true; loop: true" allow="autoplay"></a-sound> -->
 
 
         <a-entity laser-controls="hand: left"
@@ -112,7 +98,7 @@ de haut standing
         <!-- ############################################################ -->
         <!-- ############################################################ -->
         <!-- Group-0. -->
-        <a-entity scale="1 1 1" rotation="0 0 0" class="groups" id="Group-0" visible="true">
+        <a-entity scale="0 0 0" rotation="0 0 0" class="groups" id="Group-0" visible="false">
 
             <a-plane data-clickable class="pintings clickable" position="-3.77873 -1.17612 -1.37417"
                 rotation="-87.00134935943498 177.6988494552589 -85.61249966403787"
@@ -163,7 +149,7 @@ de haut standing
         </a-entity>
 
         <!-- Group-3 -->
-        <a-entity scale="0 0 0" class="groups" id="Group-3" visible="false">
+        <a-entity scale="1 1 1" class="groups" id="Group-3" visible="true">
 
             <a-plane data-clickable class="Dote" material="src: #Arrow-1; transparent:true"
                 position="5.36364 -0.90413 -0.40153"
@@ -211,15 +197,28 @@ de haut standing
 
 
             <a-plane data-clickable class="Dote" material="src: #Arrow-1; transparent:true"
-                position="0.56665 -1.16021 -2.26525"
+                position="-0.04731 -1.16021 -2.26525"
                 rotation="-84.33365786530587 149.35577324572733 -148.43560302674723"
                 the_dote="Name_of_dote: Dote-5 ; Group_to_activate: Group-5 ; The_rotation: 0">
             </a-plane>
+
+
 
             <a-plane data-clickable class="Dote" material="src: #Arrow-1; transparent:true"
                 position="0.27819 -1.16021 3.15442" rotation="-84.33365786530587 149.35577324572733 -148.43560302674723"
                 the_dote="Name_of_dote: Dote-3 ; Group_to_activate: Group-3 ; The_rotation: 0">
             </a-plane>
+            <a-plane data-clickable class="Dote" material="src: #Arrow-1; transparent:true"
+                position="-2.14916 -1.16021 -0.22321"
+                rotation="-84.33365786530587 149.35577324572733 -148.43560302674723"
+                the_dote="Name_of_dote: Dote-17 ; Group_to_activate: Group-17 ; The_rotation: 0">
+            </a-plane>
+            <a-plane data-clickable class="Dote" material="src: #Arrow-1; transparent:true"
+                position="2.36415 -0.47723 -2.44581"
+                rotation="-84.33365786530587 149.35577324572733 -148.43560302674723"
+                the_dote="Name_of_dote: Dote-14 ; Group_to_activate: Group-14 ; The_rotation: 0">
+            </a-plane>
+
 
         </a-entity>
 
@@ -392,6 +391,12 @@ de haut standing
                 the_dote="Name_of_dote: Dote-5 ; Group_to_activate: Group-5 ; The_rotation: 0">
             </a-plane>
 
+            <a-plane data-clickable class="Dote" material="src: #Arrow-1; transparent:true"
+                position="3.57339 -0.81003 -1.94969" rotation="-89.6913862075742 99.16638926565263 -12.059042714118435"
+                the_dote="Name_of_dote: Dote-16 ; Group_to_activate: Group-16 ; The_rotation: 0">
+            </a-plane>
+
+
         </a-entity>
         <!-- Group15 -->
         <a-entity scale="0 0 0" class="groups" id="Group-15" visible="false">
@@ -413,6 +418,13 @@ de haut standing
                 the_dote="Name_of_dote: Dote-14 ; Group_to_activate: Group-14 ; The_rotation: 0">
             </a-plane>
 
+        </a-entity>
+        <!-- Group17 -->
+        <a-entity scale="0 0 0" class="groups" id="Group-17" visible="false">
+            <a-plane data-clickable class="Dote" material="src: #Arrow-1; transparent:true"
+                position="1.72724 -0.70652 0.53922" rotation="-76.06072026141192 -90.20418343421629 177.30522745000403"
+                the_dote="Name_of_dote: Dote-4 ; Group_to_activate: Group-4 ; The_rotation: 0">
+            </a-plane>
         </a-entity>
 
         <!-- ############################################################ -->
